@@ -1,0 +1,16 @@
+<ul>
+  <% @feeds.each do |feed| %>
+    <li>
+      <h3>
+        <%= feed[:text] %>
+      </h3>
+
+      <hr>
+      <div>
+        <%= image_tag feed[:image_url] %>
+      </div>
+
+      At: <%= feed[:created_at] %>
+    </li>
+  <% end %>
+</ul>

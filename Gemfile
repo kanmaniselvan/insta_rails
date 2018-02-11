@@ -34,6 +34,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'dotenv-rails'
 gem 'omniauth-instagram'
+gem 'instagram', git: 'git://github.com/Instagram/instagram-ruby-gem.git'
+
+gem 'twitter-bootstrap-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
