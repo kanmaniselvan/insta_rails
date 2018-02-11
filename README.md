@@ -1,24 +1,18 @@
-# README
+# Insta Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lists all the User's posts from Instagram
 
-Things you may want to cover:
+# Setup
 
-* Ruby version
+- `bundle install`
+- `rake db:create`
+- `rake db:migrate`
+- `RAILS_ENV=test rake db:migrate`
 
-* System dependencies
+# Run
 
-* Configuration
+- `rails s` and visit localhost:3000
 
-* Database creation
+# Test
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `rspec`
