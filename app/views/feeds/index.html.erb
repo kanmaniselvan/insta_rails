@@ -1,16 +1,17 @@
-<ul>
+<div class="text-center">
   <% @feeds.each do |feed| %>
-    <li>
+    <div class="feed">
       <h3>
         <%= feed[:text] %>
       </h3>
 
-      <hr>
+      <p class="text-secondary">at <%= feed[:created_at] %></p>
+
       <div>
-        <%= image_tag feed[:image_url] %>
+        <%= image_tag feed[:image_url], class: 'img-responsive img-rounded' %>
       </div>
 
-      At: <%= feed[:created_at] %>
-    </li>
+      <hr>
+    </div>
   <% end %>
-</ul>
+</div>
